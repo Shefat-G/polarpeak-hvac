@@ -51,7 +51,7 @@ export default function Navbar() {
             </span>
             <span className="leading-none">
               Polar
-              <span className="text-accent">Peak</span>
+              <span className="text-accent-300">Peak</span>
               <span className="block text-[0.6rem] font-semibold uppercase tracking-[0.28em] text-white/60">
                 HVAC Services
               </span>
@@ -67,8 +67,8 @@ export default function Navbar() {
                   aria-current={isActive(link.href) ? 'page' : undefined}
                   className={`text-sm font-semibold transition-colors ${
                     isActive(link.href)
-                      ? 'text-accent'
-                      : 'text-white/85 hover:text-accent'
+                      ? 'text-accent-300'
+                      : 'text-white/85 hover:text-accent-300'
                   }`}
                 >
                   {link.label}
@@ -81,7 +81,7 @@ export default function Navbar() {
           <div className="hidden items-center gap-3 md:flex">
             <a
               href={contactInfo.phoneHref}
-              className="flex items-center gap-2 text-sm font-bold text-white transition-colors hover:text-accent"
+              className="flex items-center gap-2 text-sm font-bold text-white transition-colors hover:text-accent-300"
             >
               <Phone className="h-4 w-4 text-accent" aria-hidden="true" />
               <span>{contactInfo.phoneDisplay}</span>
@@ -120,8 +120,8 @@ export default function Navbar() {
                     aria-current={isActive(link.href) ? 'page' : undefined}
                     className={`block border-b border-white/10 py-3.5 text-base font-semibold transition-colors ${
                       isActive(link.href)
-                        ? 'text-accent'
-                        : 'text-white hover:text-accent'
+                        ? 'text-accent-300'
+                        : 'text-white hover:text-accent-300'
                     }`}
                   >
                     {link.label}

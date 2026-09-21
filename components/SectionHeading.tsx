@@ -26,7 +26,8 @@ export default function SectionHeading({
 
   return (
     <div className={isCentered ? 'mx-auto max-w-3xl text-center' : 'max-w-3xl'}>
-      <p className="eyebrow">{eyebrow}</p>
+      {/* Light tone = navy section, so the label uses the lighter orange */}
+      <p className={tone === 'light' ? 'eyebrow-light' : 'eyebrow'}>{eyebrow}</p>
       <h2
         id={id}
         className={`mt-4 text-3xl font-extrabold tracking-tight sm:text-4xl ${

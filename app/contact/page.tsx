@@ -38,7 +38,7 @@ export default function ContactPage() {
                     <Phone className="h-5 w-5 text-primary" aria-hidden="true" />
                   </span>
                   <span>
-                    <span className="block text-xs font-bold uppercase tracking-wider text-slate-400">
+                    <span className="block text-xs font-bold uppercase tracking-wider text-slate-600">
                       Phone
                     </span>
                     <a
@@ -55,7 +55,7 @@ export default function ContactPage() {
                     <Mail className="h-5 w-5 text-primary" aria-hidden="true" />
                   </span>
                   <span>
-                    <span className="block text-xs font-bold uppercase tracking-wider text-slate-400">
+                    <span className="block text-xs font-bold uppercase tracking-wider text-slate-600">
                       Email
                     </span>
                     <a
@@ -72,7 +72,7 @@ export default function ContactPage() {
                     <MapPin className="h-5 w-5 text-primary" aria-hidden="true" />
                   </span>
                   <span>
-                    <span className="block text-xs font-bold uppercase tracking-wider text-slate-400">
+                    <span className="block text-xs font-bold uppercase tracking-wider text-slate-600">
                       Office
                     </span>
                     <address className="not-italic font-semibold text-primary">

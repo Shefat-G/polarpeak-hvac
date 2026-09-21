@@ -19,7 +19,7 @@ export default function Footer() {
               <Snowflake className="h-6 w-6 text-white" aria-hidden="true" />
             </span>
             <span>
-              Polar<span className="text-accent">Peak</span>
+              Polar<span className="text-accent-300">Peak</span>
             </span>
           </Link>
           <p className="mt-5 text-sm leading-relaxed">{siteConfig.tagline}</p>

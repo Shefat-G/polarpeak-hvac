@@ -46,7 +46,7 @@ export default function Testimonials() {
                     />
                   ))}
                 </span>
-                <span className="text-xs font-bold uppercase tracking-wider text-slate-400">
+                <span className="text-xs font-bold uppercase tracking-wider text-slate-600">
                   {serviceUsed}
                 </span>
               </div>

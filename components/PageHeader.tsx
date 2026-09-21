@@ -21,7 +21,7 @@ export default function PageHeader({
     <section className="bg-gradient-to-br from-primary via-primary to-primary-950">
       <div className="container-page py-16 md:py-20">
         <div className="max-w-3xl">
-          <p className="eyebrow">{eyebrow}</p>
+          <p className="eyebrow-light">{eyebrow}</p>
           <h1 className="mt-4 text-3xl font-extrabold leading-tight tracking-tight text-white sm:text-4xl lg:text-5xl">
             {title}
           </h1>

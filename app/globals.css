@@ -21,7 +21,8 @@
   }
 
   ::selection {
-    @apply bg-accent text-white;
+    /* Selected text keeps the same 5.18:1 ratio as the orange buttons. */
+    @apply bg-accent-700 text-white;
   }
 }
 
@@ -41,7 +42,9 @@
   }
 
   .btn-accent {
-    @apply bg-accent text-white hover:bg-accent-600;
+    /* #C2410C keeps white button text at 5.18:1 on the orange fill; the
+       brighter #F97316 only reaches 2.80:1 with white and fails WCAG AA. */
+    @apply bg-accent-700 text-white hover:bg-accent-800;
   }
 
   .btn-navy {
@@ -56,8 +59,17 @@
     @apply border-2 border-primary/25 text-primary hover:border-primary hover:bg-primary hover:text-white;
   }
 
-  /* Small uppercase label used above every section heading */
+  /* Small uppercase section label. accent-700 (#C2410C) holds AA contrast
+     (5.18:1 on white, 4.98:1 on slate-50) whereas the brand orange #F97316
+     only reaches 2.80:1 and fails. */
   .eyebrow {
-    @apply text-xs font-bold uppercase tracking-[0.2em] text-accent;
+    @apply text-xs font-bold uppercase tracking-[0.2em] text-accent-700;
+  }
+
+  /* The same label for the navy sections: on a dark background the orange has
+     to get lighter, not darker (accent-700 on navy would be just 2.2:1).
+     accent-300 measures 6.82:1 on #1E3A5F and 9.83:1 on primary-950. */
+  .eyebrow-light {
+    @apply text-xs font-bold uppercase tracking-[0.2em] text-accent-300;
   }
 }

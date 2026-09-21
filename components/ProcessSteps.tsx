@@ -21,7 +21,13 @@ export default function ProcessSteps() {
               key={step}
               className="relative rounded-2xl border border-slate-200 bg-slate-50 p-7"
             >
-              <span className="absolute right-6 top-5 text-3xl font-extrabold text-primary-100">
+              {/* Decorative watermark: large text needs 3:1, primary-400 on
+                  slate-50 measures 3.30:1 (primary-100 was only 1.15:1). The
+                  order is already conveyed by the <ol>, so it is aria-hidden. */}
+              <span
+                aria-hidden="true"
+                className="absolute right-6 top-5 text-3xl font-extrabold text-primary-400"
+              >
                 {step}
               </span>
               <span className="flex h-12 w-12 items-center justify-center rounded-xl bg-primary">
