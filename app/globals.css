@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    /* Smooth scrolling for in-page anchors ("Learn More", footer links, ...) */
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-white text-slate-600 antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply text-primary;
+  }
+
+  ::selection {
+    @apply bg-accent text-white;
+  }
+}
+
+@layer components {
+  /* Shared layout shells */
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-8;
+  }
+
+  .section-padding {
+    @apply py-16 md:py-24;
+  }
+
+  /* Buttons */
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 rounded-lg px-6 py-3.5 text-sm font-semibold tracking-wide transition-colors duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white hover:bg-accent-600;
+  }
+
+  .btn-navy {
+    @apply bg-primary text-white hover:bg-primary-900;
+  }
+
+  .btn-outline-light {
+    @apply border-2 border-white/60 text-white hover:border-white hover:bg-white/10;
+  }
+
+  .btn-outline-navy {
+    @apply border-2 border-primary/25 text-primary hover:border-primary hover:bg-primary hover:text-white;
+  }
+
+  /* Small uppercase label used above every section heading */
+  .eyebrow {
+    @apply text-xs font-bold uppercase tracking-[0.2em] text-accent;
+  }
+}
